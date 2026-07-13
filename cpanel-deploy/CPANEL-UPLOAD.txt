@@ -1,0 +1,102 @@
+========================================
+  Supplify Trade — cPanel Upload Guide
+  Domain: supplifytrade.com
+========================================
+
+FILES IN THIS ZIP
+-----------------
+Upload ALL contents directly into public_html:
+
+  public_html/
+    index.html
+    .htaccess
+    css/
+    js/
+    assets/
+
+
+STEP 1 — Login to cPanel
+------------------------
+Open your hosting panel and go to:
+  File Manager  ->  public_html
+
+
+STEP 2 — Clean old files (if any)
+---------------------------------
+If public_html has default pages (index.php, coming soon, etc.),
+delete or backup them first.
+
+
+STEP 3 — Upload ZIP
+-------------------
+1. Click "Upload"
+2. Upload: supplifytrade-cpanel.zip
+3. Go back to public_html
+4. Right-click the zip -> Extract
+5. Move extracted files to public_html root (not inside a subfolder)
+6. Delete the zip file after extraction
+
+
+STEP 4 — Check file structure
+-----------------------------
+Your public_html must look like this:
+
+  public_html/index.html
+  public_html/.htaccess
+  public_html/css/style.css
+  public_html/js/main.js
+  public_html/assets/logo-icon.svg
+
+IMPORTANT: index.html must be directly in public_html,
+not in public_html/supplifytrade-cpanel/
+
+
+STEP 5 — Domain
+---------------
+Make sure supplifytrade.com points to this hosting:
+  - Nameservers of your host, OR
+  - A record -> your server IP
+
+In cPanel -> Domains -> check supplifytrade.com is assigned
+to public_html (or addon domain document root).
+
+
+STEP 6 — SSL (HTTPS)
+--------------------
+In cPanel:
+  Security -> SSL/TLS Status
+  Run AutoSSL / Let's Encrypt for supplifytrade.com
+
+.htaccess already redirects HTTP to HTTPS.
+
+
+STEP 7 — Test
+-------------
+Open in browser:
+  https://supplifytrade.com
+  https://supplifytrade.com/index.html
+
+If you see "Index of /" (empty folder list):
+  1. cPanel -> Domains -> supplifytrade.com
+     Document Root MUST be: /public_html
+  2. Cloudflare -> Caching -> Purge Everything
+  3. Cloudflare -> DNS -> click orange cloud to GREY (DNS only) for test
+  4. Cloudflare -> SSL/TLS -> set mode to "Full" (not Flexible)
+
+If index.html works but homepage does not:
+  Re-upload .htaccess from this zip
+
+
+OPTIONAL — Email
+----------------
+Create email in cPanel:
+  Email Accounts -> info@supplifytrade.com
+
+
+SUPPORT NOTES
+-------------
+- This is a static HTML website (no database needed)
+- No PHP or Node.js required
+- Contact form opens user's email client (mailto)
+
+========================================

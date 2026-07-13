@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="4" y1="4" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1a56db"/>
+      <stop offset="1" stop-color="#0f3d99"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="12" y1="28" x2="36" y2="12" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fbbf24"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="11" fill="url(#bg)"/>
+  <rect x="11" y="26" width="11" height="11" rx="2.5" fill="url(#accent)"/>
+  <rect x="24" y="26" width="11" height="11" rx="2.5" fill="#fff" fill-opacity="0.92"/>
+  <rect x="17.5" y="15" width="11" height="11" rx="2.5" fill="#fff" fill-opacity="0.75"/>
+  <path d="M14 22V14.5M14 14.5L10.5 18M14 14.5L17.5 18" stroke="url(#accent)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="60" y="22" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#0f172a">Supplify</text>
+  <text x="60" y="38" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#1a56db">Trade FZ-LLC</text>
+</svg>

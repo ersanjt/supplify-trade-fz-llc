@@ -1,0 +1,40 @@
+# Supplify Trade FZ-LLC — cPanel + Cloudflare
+
+DirectoryIndex index.html index.htm
+
+# Disable directory listing
+Options -Indexes +FollowSymLinks
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Allow SSL verification (Let's Encrypt / AutoSSL)
+  RewriteRule ^\.well-known/ - [L]
+
+  # HTTPS behind Cloudflare proxy
+  RewriteCond %{HTTP:CF-Visitor} '"scheme":"http"'
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  RewriteCond %{HTTPS} off
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # www -> non-www
+  RewriteCond %{HTTP_HOST} ^www\.supplifytrade\.com$ [NC]
+  RewriteRule ^ https://supplifytrade.com%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 year"
+</IfModule>
+
+AddDefaultCharset UTF-8
+
+# Block access to sensitive hidden files (keep .well-known allowed above)
+<FilesMatch "^\.(git|env|htpasswd)">
+  Require all denied
+</FilesMatch>
