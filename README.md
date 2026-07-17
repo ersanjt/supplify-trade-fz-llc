@@ -1,14 +1,15 @@
 # Supplify Trade FZ-LLC — Company Website
 
-Official company website for **Supplify Trade FZ-LLC**, a RAKEZ-licensed trading company specializing in building & construction materials.
+Official company website for **Supplify Trade FZ-LLC**, a RAKEZ-licensed B2B sourcing and international trading company.
 
 ## Pages & Sections
 
-- **Home** — Hero with company overview
-- **About** — Company details from commercial license
-- **Services** — Trading, procurement, import/export, distribution
-- **Products** — Construction materials catalog
-- **Why Us** — Competitive advantages + license display
+- **Home** — Global sourcing and international trade positioning
+- **About** — Company purpose, differentiation, values, and legal base
+- **Services** — Sourcing, procurement, verification, quality, documentation, and logistics
+- **Industries** — Licensed trading sectors and sourcing focus
+- **How We Work** — Seven-stage inquiry-to-delivery process
+- **Why Us** — Trust, quality, transparency, and license details
 - **Contact** — Address, form, business hours
 
 ## Quick Start
