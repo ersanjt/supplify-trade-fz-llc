@@ -53,6 +53,7 @@
           <li><a href="#about" class="nav__link"><i class="fa-solid fa-building"></i> About</a></li>
           <li><a href="#services" class="nav__link"><i class="fa-solid fa-briefcase"></i> Services</a></li>
           <li><a href="#industries" class="nav__link"><i class="fa-solid fa-industry"></i> Industries</a></li>
+          <li><a href="#global-reach" class="nav__link"><i class="fa-solid fa-globe"></i> Global Reach</a></li>
           <li><a href="#why-us" class="nav__link"><i class="fa-solid fa-star"></i> Why Us</a></li>
           <li><a href="#contact" class="nav__link nav__link--cta"><i class="fa-solid fa-file-invoice"></i> Request a Quote</a></li>
         </ul>
@@ -70,34 +71,16 @@
   <main>
     <!-- Hero -->
     <section class="hero" id="home">
-      <div class="hero__bg"></div>
+      <div class="hero__bg" role="img" aria-label="Global shipping containers and international logistics"></div>
       <div class="container hero__content">
-        <div class="hero__badge">
-          <i class="fa-solid fa-earth-europe"></i>
-          Global Sourcing · Procurement · International Trade
-        </div>
+        <p class="hero__brand">Supplify Trade FZ-LLC</p>
         <h1 class="hero__title">
           Swiss Reliability.<br>
-          <span class="hero__title-accent">Global Trade.</span>
+          <span class="hero__title-accent">Global Network.</span>
         </h1>
         <p class="hero__subtitle">
           Connecting trusted suppliers with international buyers through reliable sourcing, quality control, and efficient logistics.
         </p>
-
-        <div class="hero__features">
-          <div class="hero__feature">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <span>Verified Suppliers</span>
-          </div>
-          <div class="hero__feature">
-            <i class="fa-solid fa-clipboard-check"></i>
-            <span>Quality Control</span>
-          </div>
-          <div class="hero__feature">
-            <i class="fa-solid fa-ship"></i>
-            <span>Worldwide Shipping</span>
-          </div>
-        </div>
 
         <div class="hero__actions">
           <a href="#contact" class="btn btn--primary">
@@ -109,30 +92,19 @@
             Contact Our Team
           </a>
         </div>
+      </div>
+    </section>
 
-        <div class="hero__stats">
-          <div class="hero__stat">
-            <div class="hero__stat-icon"><i class="fa-solid fa-clipboard-check"></i></div>
-            <div>
-              <span class="hero__stat-number">RAKEZ</span>
-              <span class="hero__stat-label">UAE Licensed Company</span>
-            </div>
-          </div>
-          <div class="hero__stat">
-            <div class="hero__stat-icon"><i class="fa-solid fa-earth-americas"></i></div>
-            <div>
-              <span class="hero__stat-number">Global</span>
-              <span class="hero__stat-label">Supplier Network</span>
-            </div>
-          </div>
-          <div class="hero__stat">
-            <div class="hero__stat-icon"><i class="fa-solid fa-handshake"></i></div>
-            <div>
-              <span class="hero__stat-number">B2B</span>
-              <span class="hero__stat-label">Sourcing & Trade Focus</span>
-            </div>
-          </div>
-        </div>
+    <!-- Trust strip -->
+    <section class="trust-strip" aria-label="Trust highlights">
+      <div class="container trust-strip__inner">
+        <div class="trust-strip__item"><i class="fa-solid fa-certificate"></i><span>UAE Licensed</span></div>
+        <div class="trust-strip__divider" aria-hidden="true"></div>
+        <div class="trust-strip__item"><i class="fa-solid fa-user-check"></i><span>Verified Suppliers</span></div>
+        <div class="trust-strip__divider" aria-hidden="true"></div>
+        <div class="trust-strip__item"><i class="fa-solid fa-clipboard-check"></i><span>Quality Control</span></div>
+        <div class="trust-strip__divider" aria-hidden="true"></div>
+        <div class="trust-strip__item"><i class="fa-solid fa-truck-fast"></i><span>Global Logistics</span></div>
       </div>
     </section>
 
@@ -182,6 +154,44 @@
                   <span class="about__detail-label">Partnership</span>
                   <span class="about__detail-value">Long-term business relationships</span>
                 </div>
+              </div>
+            </div>
+
+            <div class="licence-box" id="licence">
+              <div class="licence-box__header">
+                <i class="fa-solid fa-certificate"></i>
+                <div>
+                  <h3>Company Registration & Licence</h3>
+                  <p>Official details for verification and due diligence.</p>
+                </div>
+              </div>
+              <dl class="licence-box__grid">
+                <div>
+                  <dt>Legal Name</dt>
+                  <dd>Supplify Trade FZ-LLC</dd>
+                </div>
+                <div>
+                  <dt>Entity Type</dt>
+                  <dd>Free Zone LLC (FZ-LLC)</dd>
+                </div>
+                <div>
+                  <dt>Licensing Authority</dt>
+                  <dd>RAKEZ — Ras Al Khaimah Economic Zone</dd>
+                </div>
+                <div>
+                  <dt>Registered Address</dt>
+                  <dd>VUET1795, Compass Building, Al Hulaila Industrial Zone-FZ, Ras Al Khaimah, UAE</dd>
+                </div>
+              </dl>
+              <div class="licence-box__actions">
+                <a class="btn btn--primary btn--sm" href="https://www.growth.gov.ae/G2C/" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  Verify via UAE National Economic Register
+                </a>
+                <a class="btn btn--ghost btn--sm" href="https://rakez.com/" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Visit RAKEZ
+                </a>
               </div>
             </div>
           </div>
@@ -383,62 +393,158 @@
         </div>
 
         <div class="products__grid">
-          <div class="product-card">
-            <div class="icon-box icon-box--product">
-              <i class="fa-solid fa-trowel-bricks"></i>
+          <article class="product-card product-card--media">
+            <div class="product-card__media">
+              <img src="assets/industry-construction.jpg" alt="Construction materials and building sites" loading="lazy" width="600" height="360">
             </div>
-            <h3 class="product-card__title">Construction Materials</h3>
-            <p class="product-card__desc">Sourcing and trade support for building, infrastructure, and fit-out requirements.</p>
-            <ul class="product-card__list">
-              <li><i class="fa-solid fa-check"></i> Cement, steel & aggregates</li>
-              <li><i class="fa-solid fa-check"></i> Tiles, flooring & finishes</li>
-              <li><i class="fa-solid fa-check"></i> MEP & insulation materials</li>
-            </ul>
-          </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Construction Materials</h3>
+              <p class="product-card__desc">Sourcing and trade support for building, infrastructure, and fit-out requirements.</p>
+              <ul class="product-card__list">
+                <li><i class="fa-solid fa-check"></i> Cement, steel & aggregates</li>
+                <li><i class="fa-solid fa-check"></i> Tiles, flooring & finishes</li>
+                <li><i class="fa-solid fa-check"></i> MEP & insulation materials</li>
+              </ul>
+            </div>
+          </article>
 
-          <div class="product-card">
-            <div class="icon-box icon-box--product">
-              <i class="fa-solid fa-gears"></i>
+          <article class="product-card product-card--media">
+            <div class="product-card__media">
+              <img src="assets/industry-industrial.jpg" alt="Industrial equipment and manufacturing" loading="lazy" width="600" height="360">
             </div>
-            <h3 class="product-card__title">Industrial Goods & Equipment</h3>
-            <p class="product-card__desc">Procurement support for plant, workshop, maintenance, and industrial operations.</p>
-            <ul class="product-card__list">
-              <li><i class="fa-solid fa-check"></i> Plant equipment</li>
-              <li><i class="fa-solid fa-check"></i> Components & consumables</li>
-              <li><i class="fa-solid fa-check"></i> Custom procurement</li>
-            </ul>
-          </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Industrial Goods & Equipment</h3>
+              <p class="product-card__desc">Procurement support for plant, workshop, maintenance, and industrial operations.</p>
+              <ul class="product-card__list">
+                <li><i class="fa-solid fa-check"></i> Plant equipment</li>
+                <li><i class="fa-solid fa-check"></i> Components & consumables</li>
+                <li><i class="fa-solid fa-check"></i> Custom procurement</li>
+              </ul>
+            </div>
+          </article>
 
-          <div class="product-card">
-            <div class="icon-box icon-box--product">
-              <i class="fa-solid fa-tractor"></i>
+          <article class="product-card product-card--media">
+            <div class="product-card__media">
+              <img src="assets/industry-agriculture.jpg" alt="Agricultural equipment and farming operations" loading="lazy" width="600" height="360">
             </div>
-            <h3 class="product-card__title">Agricultural Equipment</h3>
-            <p class="product-card__desc">International sourcing for farming, irrigation, handling, and related equipment needs.</p>
-            <ul class="product-card__list">
-              <li><i class="fa-solid fa-check"></i> Farm equipment</li>
-              <li><i class="fa-solid fa-check"></i> Irrigation components</li>
-              <li><i class="fa-solid fa-check"></i> Parts & accessories</li>
-            </ul>
-          </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Agricultural Equipment</h3>
+              <p class="product-card__desc">International sourcing for farming, irrigation, handling, and related equipment needs.</p>
+              <ul class="product-card__list">
+                <li><i class="fa-solid fa-check"></i> Farm equipment</li>
+                <li><i class="fa-solid fa-check"></i> Irrigation components</li>
+                <li><i class="fa-solid fa-check"></i> Parts & accessories</li>
+              </ul>
+            </div>
+          </article>
 
-          <div class="product-card">
-            <div class="icon-box icon-box--product">
-              <i class="fa-solid fa-car-rear"></i>
+          <article class="product-card product-card--media">
+            <div class="product-card__media">
+              <img src="assets/industry-automotive.jpg" alt="Automotive spare parts and components" loading="lazy" width="600" height="360">
             </div>
-            <h3 class="product-card__title">Automotive Spare Parts</h3>
-            <p class="product-card__desc">B2B sourcing and export coordination for approved automotive part requirements.</p>
-            <ul class="product-card__list">
-              <li><i class="fa-solid fa-check"></i> Replacement parts</li>
-              <li><i class="fa-solid fa-check"></i> Components & accessories</li>
-              <li><i class="fa-solid fa-check"></i> Bulk trade inquiries</li>
-            </ul>
-          </div>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Automotive Spare Parts</h3>
+              <p class="product-card__desc">B2B sourcing and export coordination for approved automotive part requirements.</p>
+              <ul class="product-card__list">
+                <li><i class="fa-solid fa-check"></i> Replacement parts</li>
+                <li><i class="fa-solid fa-check"></i> Components & accessories</li>
+                <li><i class="fa-solid fa-check"></i> Bulk trade inquiries</li>
+              </ul>
+            </div>
+          </article>
         </div>
 
         <div class="products__note">
           <i class="fa-solid fa-circle-info"></i>
           <p>Have a requirement outside these categories? <a href="#contact">Contact our team</a> with the product specification, quantity, and destination so we can review sourcing feasibility.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Global Reach -->
+    <section class="section global-reach" id="global-reach">
+      <div class="container">
+        <div class="section__header section__header--light">
+          <span class="section__tag section__tag--light"><i class="fa-solid fa-globe"></i> Global Reach</span>
+          <h2 class="section__title section__title--light">Where We Operate & Coordinate Trade</h2>
+          <p class="section__desc section__desc--light">A focused map of our UAE headquarters and the corridors where we actively support sourcing, buyers, and logistics.</p>
+        </div>
+
+        <div class="global-reach__layout">
+          <div class="global-reach__map-wrap" aria-hidden="false">
+            <svg class="global-reach__map" viewBox="0 0 1000 480" role="img" aria-label="World map highlighting UAE headquarters, GCC, Asia sourcing, and international buyer corridors">
+              <defs>
+                <linearGradient id="mapOcean" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#0b1c3d"/>
+                  <stop offset="100%" stop-color="#12305f"/>
+                </linearGradient>
+              </defs>
+              <rect width="1000" height="480" fill="url(#mapOcean)" rx="24"/>
+              <g fill="#1e3a5f" opacity="0.9">
+                <path d="M120 110c40-28 92-42 140-38 36 3 68 20 92 44 18 18 28 42 26 68-4 36-28 62-56 78-34 20-74 22-110 12-42-12-74-42-86-82-8-26-4-56 0-82z"/>
+                <path d="M300 90c48-18 104-20 152-4 38 12 70 40 84 76 12 32 6 68-12 96-22 34-58 54-96 58-46 4-92-14-120-48-24-28-34-68-28-104 4-26 18-54 20-74z"/>
+                <path d="M470 140c44-10 92-8 132 12 34 18 58 50 62 88 4 34-10 68-34 92-28 28-68 40-106 36-42-4-80-28-98-64-18-36-14-80 6-112 12-20 24-42 38-52z"/>
+                <path d="M620 120c52-24 118-28 172-8 42 16 78 48 90 92 10 36 0 76-24 104-28 34-72 50-116 48-48-2-94-24-120-62-22-32-24-76-8-112 10-22 28-46 6-62z"/>
+                <path d="M180 300c36-14 80-12 114 8 28 16 46 44 48 76 2 30-12 58-36 74-28 18-64 20-94 8-34-14-58-44-62-78-4-30 6-62 30-88z"/>
+                <path d="M360 320c42-16 92-10 128 16 28 20 42 54 36 86-6 34-34 60-66 70-36 12-78 4-106-20-26-22-36-58-28-90 6-26 18-48 36-62z"/>
+                <path d="M700 300c40-20 92-18 130 4 30 18 48 50 44 84-4 32-28 58-56 70-34 14-74 10-102-10-28-20-40-54-32-86 6-26 20-48 16-62z"/>
+              </g>
+              <g class="map-routes" stroke="#f59e0b" stroke-width="1.5" fill="none" opacity="0.55" stroke-dasharray="6 6">
+                <path d="M575 245 C640 210, 720 200, 780 220"/>
+                <path d="M575 245 C520 270, 450 300, 400 330"/>
+                <path d="M575 245 C610 180, 680 140, 730 120"/>
+              </g>
+              <g class="map-markers">
+                <g transform="translate(575 245)">
+                  <circle r="18" fill="rgba(245,158,11,0.18)"/>
+                  <circle r="8" fill="#f59e0b"/>
+                  <circle r="3.5" fill="#fff"/>
+                </g>
+                <g transform="translate(545 230)">
+                  <circle r="6" fill="#3b7aed"/>
+                </g>
+                <g transform="translate(780 220)">
+                  <circle r="7" fill="#3b7aed"/>
+                </g>
+                <g transform="translate(400 330)">
+                  <circle r="7" fill="#3b7aed"/>
+                </g>
+                <g transform="translate(730 120)">
+                  <circle r="7" fill="#3b7aed"/>
+                </g>
+              </g>
+              <g fill="#ffffff" font-family="Inter, sans-serif" font-size="14" font-weight="600">
+                <text x="590" y="272">UAE HQ</text>
+                <text x="500" y="218">GCC</text>
+                <text x="790" y="210">Asia Sourcing</text>
+                <text x="360" y="355">Africa &amp; Buyers</text>
+                <text x="710" y="108">Europe Buyers</text>
+              </g>
+            </svg>
+          </div>
+
+          <div class="global-reach__list">
+            <article class="reach-card">
+              <span class="reach-card__badge">Headquarters</span>
+              <h3>United Arab Emirates</h3>
+              <p>Ras Al Khaimah base for licensed trading, documentation, and deal coordination.</p>
+            </article>
+            <article class="reach-card">
+              <span class="reach-card__badge">Regional</span>
+              <h3>GCC & Middle East</h3>
+              <p>Regional buyer and project supply support across neighbouring Gulf markets.</p>
+            </article>
+            <article class="reach-card">
+              <span class="reach-card__badge">Sourcing</span>
+              <h3>Asia Supply Corridors</h3>
+              <p>Supplier discovery and manufacturing coordination for international procurement.</p>
+            </article>
+            <article class="reach-card">
+              <span class="reach-card__badge">Buyers & Logistics</span>
+              <h3>International Destinations</h3>
+              <p>Shipment and documentation support for buyers in Europe, Africa, and other agreed destinations.</p>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -518,9 +624,9 @@
     <section class="section contact" id="contact">
       <div class="container">
         <div class="section__header section__header--light">
-          <span class="section__tag section__tag--light"><i class="fa-solid fa-envelope"></i> Contact Us</span>
-          <h2 class="section__title section__title--light">Get in Touch</h2>
-          <p class="section__desc section__desc--light">Ready to source a product, discuss a trade requirement, or join our supplier network? Send us an inquiry.</p>
+          <span class="section__tag section__tag--light"><i class="fa-solid fa-file-invoice"></i> Request a Quote</span>
+          <h2 class="section__title section__title--light">Detailed RFQ for Faster Quotation</h2>
+          <p class="section__desc section__desc--light">Share product, specifications, quantity, destination, and Incoterm so our team can respond with a clear commercial offer.</p>
         </div>
 
         <div class="contact__grid">
@@ -542,6 +648,19 @@
               <div>
                 <h4>Email</h4>
                 <p><a href="mailto:info@supplifytrade.com">info@supplifytrade.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact__card">
+              <div class="icon-box icon-box--contact">
+                <i class="fa-solid fa-certificate"></i>
+              </div>
+              <div>
+                <h4>Licence Verification</h4>
+                <p>
+                  <a href="https://www.growth.gov.ae/G2C/" target="_blank" rel="noopener noreferrer">UAE National Economic Register</a><br>
+                  Search for <strong>Supplify Trade FZ-LLC</strong>
+                </p>
               </div>
             </div>
 
@@ -576,23 +695,61 @@
               <input type="text" id="company" name="company" placeholder="Your company">
             </div>
             <div class="form__group">
-              <label for="subject"><i class="fa-solid fa-tag"></i> Subject *</label>
+              <label for="subject"><i class="fa-solid fa-tag"></i> Inquiry Type *</label>
               <select id="subject" name="subject" required>
                 <option value="">Select a topic</option>
-                <option value="quote">Request a Quote</option>
-                <option value="products">Product Inquiry</option>
-                <option value="partnership">Partnership / Distribution</option>
-                <option value="supplier">Become a Supplier</option>
-                <option value="other">Other</option>
+                <option value="Request a Quote">Request a Quote</option>
+                <option value="Product Inquiry">Product Inquiry</option>
+                <option value="Partnership / Distribution">Partnership / Distribution</option>
+                <option value="Become a Supplier">Become a Supplier</option>
+                <option value="Other">Other</option>
               </select>
             </div>
+            <div class="form__row">
+              <div class="form__group">
+                <label for="product"><i class="fa-solid fa-box"></i> Product *</label>
+                <input type="text" id="product" name="product" required placeholder="e.g. Portland cement / hydraulic pump">
+              </div>
+              <div class="form__group">
+                <label for="quantity"><i class="fa-solid fa-cubes"></i> Quantity *</label>
+                <input type="text" id="quantity" name="quantity" required placeholder="e.g. 2 x 40ft containers / 500 pcs">
+              </div>
+            </div>
             <div class="form__group">
-              <label for="message"><i class="fa-solid fa-message"></i> Message *</label>
-              <textarea id="message" name="message" rows="5" required placeholder="Tell us about your material requirements, quantities, and delivery location..."></textarea>
+              <label for="specifications"><i class="fa-solid fa-list-check"></i> Specifications *</label>
+              <textarea id="specifications" name="specifications" rows="3" required placeholder="Grade, size, standards, packing, brand preferences, or other technical details..."></textarea>
+            </div>
+            <div class="form__row">
+              <div class="form__group">
+                <label for="destination"><i class="fa-solid fa-location-dot"></i> Destination Country / Port *</label>
+                <input type="text" id="destination" name="destination" required placeholder="e.g. Jebel Ali, UAE / Rotterdam, NL">
+              </div>
+              <div class="form__group">
+                <label for="incoterm"><i class="fa-solid fa-ship"></i> Preferred Incoterm</label>
+                <select id="incoterm" name="incoterm">
+                  <option value="">Select Incoterm</option>
+                  <option value="EXW">EXW</option>
+                  <option value="FOB">FOB</option>
+                  <option value="CFR">CFR</option>
+                  <option value="CIF">CIF</option>
+                  <option value="DAP">DAP</option>
+                  <option value="DDP">DDP</option>
+                  <option value="Other / To advise">Other / To advise</option>
+                </select>
+              </div>
+            </div>
+            <div class="form__group">
+              <label for="message"><i class="fa-solid fa-message"></i> Additional Notes</label>
+              <textarea id="message" name="message" rows="3" placeholder="Target price, timeline, packaging, inspection needs, or other commercial notes..."></textarea>
+            </div>
+            <div class="form__group">
+              <label for="attachment"><i class="fa-solid fa-paperclip"></i> Specification Sheet / File</label>
+              <input type="file" id="attachment" name="attachment" accept=".pdf,.doc,.docx,.xls,.xlsx,.jpg,.jpeg,.png,.zip">
+              <p class="form__hint">PDF, Word, Excel, image, or ZIP. Because this site uses your email client, please attach the selected file manually after the draft opens.</p>
             </div>
             <button type="submit" class="btn btn--primary btn--full">
               <i class="fa-solid fa-paper-plane"></i>
-              Send Inquiry
+              Submit RFQ
             </button>
             <p class="form__note"><i class="fa-solid fa-clock"></i> We typically respond within 1 business day.</p>
           </form>
@@ -626,7 +783,8 @@
           <li><a href="#about"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
           <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Services</a></li>
           <li><a href="#industries"><i class="fa-solid fa-chevron-right"></i> Industries</a></li>
-          <li><a href="#contact"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+          <li><a href="#global-reach"><i class="fa-solid fa-chevron-right"></i> Global Reach</a></li>
+          <li><a href="#contact"><i class="fa-solid fa-chevron-right"></i> Request a Quote</a></li>
         </ul>
       </div>
 
@@ -641,10 +799,12 @@
       </div>
 
       <div class="footer__links">
-        <h4><i class="fa-solid fa-scale-balanced"></i> Legal</h4>
+        <h4><i class="fa-solid fa-scale-balanced"></i> Legal & Verification</h4>
         <ul>
-          <li><i class="fa-solid fa-building"></i> FZ-LLC · RAKEZ</li>
-          <li><i class="fa-solid fa-map-pin"></i> Ras Al Khaimah, UAE</li>
+          <li><i class="fa-solid fa-building"></i> Supplify Trade FZ-LLC</li>
+          <li><i class="fa-solid fa-map-pin"></i> RAKEZ · Ras Al Khaimah, UAE</li>
+          <li><a href="https://www.growth.gov.ae/G2C/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-magnifying-glass"></i> Verify licence (NER)</a></li>
+          <li><a href="#licence"><i class="fa-solid fa-certificate"></i> Company licence details</a></li>
         </ul>
       </div>
     </div>
@@ -657,6 +817,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=2"></script>
+  <script src="js/main.js?v=3"></script>
 </body>
 </html>

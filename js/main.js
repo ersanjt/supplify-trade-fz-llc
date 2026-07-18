@@ -62,22 +62,33 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', updateActiveLink);
   updateActiveLink();
 
-  // Contact form handling
+  // RFQ / contact form handling
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
 
       const formData = new FormData(contactForm);
       const data = Object.fromEntries(formData.entries());
+      const attachmentInput = contactForm.querySelector('#attachment');
+      const attachmentName = attachmentInput && attachmentInput.files && attachmentInput.files[0]
+        ? attachmentInput.files[0].name
+        : 'None selected';
 
-      const subject = encodeURIComponent(`[Supplify Trade] ${data.subject || 'Inquiry'} from ${data.name}`);
+      const subject = encodeURIComponent(`[Supplify Trade RFQ] ${data.subject || 'Inquiry'} — ${data.product || data.name}`);
       const body = encodeURIComponent(
         `Name: ${data.name}\n` +
         `Email: ${data.email}\n` +
         `Phone: ${data.phone || 'N/A'}\n` +
         `Company: ${data.company || 'N/A'}\n` +
-        `Subject: ${data.subject}\n\n` +
-        `Message:\n${data.message}`
+        `Inquiry Type: ${data.subject}\n\n` +
+        `Product: ${data.product}\n` +
+        `Quantity: ${data.quantity}\n` +
+        `Specifications:\n${data.specifications}\n\n` +
+        `Destination Country / Port: ${data.destination}\n` +
+        `Preferred Incoterm: ${data.incoterm || 'To advise'}\n` +
+        `Specification File: ${attachmentName}\n\n` +
+        `Additional Notes:\n${data.message || 'N/A'}\n\n` +
+        `Note: If a specification file was selected, please attach "${attachmentName}" to this email before sending.`
       );
 
       window.location.href = `mailto:info@supplifytrade.com?subject=${subject}&body=${body}`;
@@ -85,15 +96,14 @@ document.addEventListener('DOMContentLoaded', () => {
       contactForm.reset();
 
       const btn = contactForm.querySelector('button[type="submit"]');
-      const originalText = btn.textContent;
+      const originalHtml = btn.innerHTML;
       btn.textContent = 'Opening email client...';
       btn.disabled = true;
 
       setTimeout(() => {
-        btn.textContent = originalText;
+        btn.innerHTML = originalHtml;
         btn.disabled = false;
       }, 3000);
     });
   }
-
 });
